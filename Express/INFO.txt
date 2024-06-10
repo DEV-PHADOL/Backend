@@ -1,0 +1,7 @@
+EXPRESS.js Framework
+
+INTRODUCTION to Express.js
+-express is npm package
+-framework
+-manages everything from reciving the request and giving the response
+

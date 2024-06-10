@@ -1,0 +1,17 @@
+npm : node package manager
+
+MODULE : already installed in core node js
+PACKAGE : meanwhile we download stuff from npm is called PACKAGE
+
+INSTALLING AND UNINSTALLING ANYTHING 
+
+install-> npm install(or i) package_name
+for eg : npm install express
+
+installing a particular version 
+npm install(or i) package_name@version
+for eg : npm install accessibility@3.0.9
+
+uninstall-> npm uninstall package_name
+for eg : npm uninstall express
+
