@@ -15,3 +15,16 @@ for eg : npm install accessibility@3.0.9
 uninstall-> npm uninstall package_name
 for eg : npm uninstall express
 
+dependencies : packages and dependencies of that packages 
+
+devdependencies : packages which only used in development and when the app has been deployed we will not used this dependencies
+
+scripts - understanding default scripts PATH and custom scripts
+
+default scripts : START and TEST [this keywords are already present in the table]
+for running this script we need to enter 
+npm start
+npm test 
+
+custom script : in custom script we need to add run key word as it is not present in the table.
+npm run script_name
