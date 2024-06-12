@@ -1,0 +1,11 @@
+HTTP methods
+
+HTTP GET : When you want to get some data from the SERVER.
+
+HTTP POST : When you want to send and mutate some data in SERVER.
+
+HTTP PUT : when we want to upload some file for eg. image, pdf.
+
+HTTP PATCH : When we want to update the data from the database.
+
+HTTP DELETE : When we want to delete the exsisting entry.
