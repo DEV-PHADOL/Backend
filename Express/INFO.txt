@@ -5,3 +5,29 @@ INTRODUCTION to Express.js
 -framework
 -manages everything from reciving the request and giving the response
 
+ROUTE : 
+remaining part other than domain is called as Route
+for eg : www.youtube.com/profile
+route : /profile , /about , /contactus
+In route the req and res are the requestHandler
+
+MIDDLEWARE : 
+basically middle man between request and respond . when client request to the server and we want to perform a set of action before route that work middleware does. 
+for eg : authentication, logging, data validation , etc
+thus the above process middleware does 
+app.use((req,res,next)=>{
+    console.log("middleware");
+    next();
+});
+
+ERROR HANDLING : 
+Error Handling refers to how Express catches and processes errors that occur both synchronously and asynchronously. Express comes with a default error handler so you don’t need to write your own to get started.
+
+app.get("/about",function (req,res,next) {
+    return next(new Error("SOMTHING WENT WRONG"));
+});
+
+app.use((err,req,res,next)=>{
+    console.error(err.stack);
+    res.status(500).send('SOMTHING BROKE!');
+});
