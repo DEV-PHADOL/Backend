@@ -1,0 +1,20 @@
+Form handling and working with the Forms
+handle Backend process of Forms and making sure the data coming from any
+- Frontend
+- Library
+- Framework
+- Templating Engines
+We still handle it at the Backend
+
+To install Cookie Parser
+- npm install cookie-parser 
+
+Cookie
+- A cookie is a small text file that is saved on the user’s computer. The maximum file size for a cookie is 4KB. It is also known as an HTTP cookie, a web cookie, or an internet cookie. When a user first visits a website, the site sends data packets to the user’s computer in the form of a cookie.
+
+Session : 
+- A session is used to save information on the server momentarily so that it may be utilized across various pages of the website. It is the overall amount of time spent on an activity. The user session begins when the user logs in to a specific network application and ends when the user logs out of the program or shuts down the machine.
+
+It is used to read the form data
+- app.use(express.json());
+- app.use(express.urlencoded({extended:true}));
