@@ -15,7 +15,7 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/file/:filename',(req,res)=>{
-    fs.readFile(`./files/${req.params.filename}.txt`, "utf-8" ,function(err,filedata){
+    fs.readFile(`./files/${req.params.filename}`, "utf-8" ,function(err,filedata){
         res.render('show',{filename: req.params.filename ,filedata: filedata});
     });
 })
