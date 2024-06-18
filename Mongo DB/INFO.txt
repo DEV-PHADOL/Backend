@@ -1,0 +1,32 @@
+MONGO DB
+
+Data Storage : 
+It is a container where we can store users information
+this is called as DATABASE
+
+SQL : Data is stored in the form of TABLES.
+
+NoSQL : Data is stored in the form of OBJECTS.
+
+Database -> Collection -> Document
+
+CODE                        DATABASE
+-----------------------------------------------
+mongoose.connect    ->      database create
+model create        ->      Collection
+CREATE code         ->      document
+
+
+First, we have to install mongoose package inside the root folder and check the dependencies from package.json
+then, we have to create a usermodule.js file inside the root folder 
+const mongoose = require('mongoose');
+
+mongoose.connect(`mongodb://localhost:27017/mongopractice`);
+
+const userSchema = mongoose.Schema({
+    name : String,
+    username: String,
+    email: String
+});
+
+module.exports = mongoose.model("user",userSchema);
