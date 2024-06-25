@@ -46,3 +46,4 @@ app.post('/update/:userid',async (req,res)=>{
 app.listen(3000,()=>{
     console.log("It's Working");
 })
+
